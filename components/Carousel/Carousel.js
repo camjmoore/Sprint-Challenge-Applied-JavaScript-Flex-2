@@ -6,6 +6,52 @@
     5. Think of how you would animate this component. Make the cards slide in and out, or fade. It's up to you!
     6. Have fun!
 */
+const carouselHTML = document.querySelector('.carousel-container')
+
+function carousel() {
+
+  const carouselDiv = document.createElement('div')
+  const leftButton = document.createElement('div')
+  const rightButton = document.createElement('div')
+  const img1 = document.createElement('img')
+  const img2 = document.createElement('img')
+  const img3 = document.createElement('img')
+  const img4 = document.createElement('img')
+
+  // const images = document.querySelectorAll('img')
+
+  // images.forEach( (image, index) => {
+    
+  // })
+
+  carouselDiv.appendChild(leftButton)
+  carouselDiv.appendChild(img1)
+  carouselDiv.appendChild(img2)
+  carouselDiv.appendChild(img3)
+  carouselDiv.appendChild(img4)
+  carouselDiv.appendChild(rightButton)
+
+  carouselDiv.classList.add('carousel')
+  leftButton.classList.add('left-button')
+  rightButton.classList.add('right-button')
+
+  leftButton.textContent = '<'
+  rightButton.textContent = '>'
+
+  img1.src = "./assets/carousel/mountains.jpeg";
+  img2.src = "./assets/carousel/computer.jpeg";
+  img3.src = "./assets/carousel/trees.jpeg";
+  img4.src = "./assets/carousel/turntable.jpeg";
+
+return carouselDiv
+}
+
+// const imagesArr = ["./assets/carousel/mountains.jpeg", "./assets/carousel/computer.jpeg", "./assets/carousel/trees.jpeg", "./assets/carousel/turntable.jpeg" ]
+
+carouselHTML.appendChild(carousel())
+
+
+
 
 /* HTML:
   <div class="carousel">
