@@ -27,3 +27,4 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics")
     .catch( error => {
         console.log('we couldn\'t find any data', error)
     })
+
